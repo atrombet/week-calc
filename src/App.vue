@@ -11,20 +11,20 @@
                 <span class="raleway text-thin">TECH</span>
               </a>
             </h4>
-            <p class="mt-5">Ever wonder how many weeks are in a year?</p>
+            <p class="mt-4">Ever wonder how many weeks are in a year?</p>
             <p>Now you don't have to.</p>
           </v-flex>
         </v-layout>
         <v-layout>
           <v-flex xs6 md2 offset-xs3 offset-md5>
-            <v-select :items="years" labal="Choose a year" color="pink" @change="reset"></v-select>
+            <v-select :items="years" label="Choose a year" color="pink" @change="reset"></v-select>
           </v-flex>
         </v-layout>
-        <v-layout column justify-center align-center class="ma-4">
+        <v-layout column justify-center align-center class="ma-3">
           <v-btn color="pink" @click="calcWeeks">Calculate Weeks</v-btn>
         </v-layout>
         <v-layout v-if="weeks" column justify-center align-center>
-          <h1 class="ma-3">{{weeks}}</h1>
+          <h1>{{weeks}}</h1>
           <v-btn flat @click="reset">Reset</v-btn>
         </v-layout>
       </v-container>
