@@ -20,7 +20,7 @@
             <v-select :items="years" labal="Choose a year" color="pink" @change="reset"></v-select>
           </v-flex>
         </v-layout>
-        <v-layout column justify-center align-center>
+        <v-layout column justify-center align-center class="ma-4">
           <v-btn color="pink" @click="calcWeeks">Calculate Weeks</v-btn>
         </v-layout>
         <v-layout v-if="weeks" column justify-center align-center>
@@ -61,15 +61,29 @@ export default {
 }
 </script>
 
-<style>
-a {
-  color: white;
+<style lang="scss">
+@import '~rfs/scss';
+
+h1 {
+  @include font-size(4rem);
 }
 
-a:-webkit-any-link {
+h4 {
+  @include font-size(2rem);
+}
+
+p {
+  @include font-size(2rem);
+}
+
+a {
+  color: white;
+
+  &:-webkit-any-link {
     color: white;
     cursor: pointer;
     text-decoration: none;
+  }
 }
 
 .text-bold {
