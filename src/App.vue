@@ -69,11 +69,11 @@ h1 {
 }
 
 h4 {
-  @include font-size(2rem);
+  @include font-size(1.5rem);
 }
 
 p {
-  @include font-size(2rem);
+  @include font-size(1.25rem);
 }
 
 a {
